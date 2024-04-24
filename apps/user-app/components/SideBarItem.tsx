@@ -14,13 +14,13 @@ export default function SidebarItem({ title, href, icon }: SidebarItemProps){
     const selected= href===pathname
 
     return(
-        <div className={`flex ${selected ? "text-[#5E10C1]" : "text-black"} cursor-pointer`} onClick={()=>{
+        <div className={`flex ${selected ? "text-[#003985]" : "text-black"} cursor-pointer`} onClick={()=>{
             router.push(`${href}`)
         }}>
             <div className="m-1">
                 {icon}
             </div>
-            <div className="my-1" onClick={()=>{}}>
+            <div className="my-1 px-2" onClick={()=>{}}>
                 {title}
             </div>
         </div>

@@ -18,7 +18,7 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#FFF7E8]`}>
+      <body className={`${inter.className} bg-[#DDD7D1]`}>
         <Providers>
           <AppBarClient />
           {children}

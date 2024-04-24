@@ -13,7 +13,7 @@
       "prisma": "5.11.0"
   },
   "exports": {
-      "./client": "./src/index.ts"
+      "./client": "./index.ts"
   },
   "keywords": [],
   "author": "",

@@ -1,15 +1,14 @@
-
 import { getServerSession } from "next-auth";
-import { redirect } from "next/navigation";
 import { authOptions } from "../../lib/auth";
+import { DashboardCard } from "../../../components/DashboardCard";
+import { redirect } from "next/navigation";
 
 export default async function Dashboard() {
     const session = await getServerSession(authOptions)
-    
     if(session?.user){
         return(
             <div>
-                hey {session.user.name}
+                <DashboardCard />
             </div>
         )
     }
